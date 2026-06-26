@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { Send, GitFork, Link2, Mail, MessageCircle, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
+import { Send, GitFork, Link2, Mail, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
 
 const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID  ?? ''
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? ''
