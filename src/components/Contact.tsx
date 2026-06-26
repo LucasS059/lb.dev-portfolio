@@ -12,7 +12,6 @@ const contactLinks = [
   { href: 'mailto:dev.lucas.silva59@gmail.com',               icon: Mail,          label: 'dev.lucas.silva59@gmail.com', aria: 'Email',    external: false },
   { href: 'https://www.linkedin.com/in/lucas-barboza-dev-br', icon: Link2,         label: 'LinkedIn',                   aria: 'LinkedIn', external: true },
   { href: 'https://github.com/LucasS059',                     icon: GitFork,       label: 'GitHub',                     aria: 'GitHub',   external: true },
-  { href: 'https://wa.me/5511999999999',                      icon: MessageCircle, label: 'WhatsApp',                   aria: 'WhatsApp', external: true },
 ]
 
 export function Contact() {
