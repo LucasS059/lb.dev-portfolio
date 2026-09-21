@@ -43,7 +43,7 @@ export function Projects() {
 
         {/* Cabeçalho + setas */}
         <div className="mb-10 md:mb-14">
-          <p className="text-[11px] font-mono text-[#00CFFF]/50 tracking-[0.2em] uppercase mb-4">
+          <p className="text-[11px] font-mono text-[#F97316]/50 tracking-[0.2em] uppercase mb-4">
             — Projetos
           </p>
           <div className="flex items-end justify-between gap-4">
@@ -61,7 +61,7 @@ export function Projects() {
                 onClick={() => scroll('left')}
                 disabled={atStart}
                 aria-label="Anterior"
-                className="w-9 h-9 rounded-xl border border-[#1A1F2E] flex items-center justify-center text-[#475569] hover:text-[#CBD5E1] hover:border-[#00CFFF]/25 transition-all duration-200 disabled:opacity-20 disabled:cursor-not-allowed"
+                className="w-9 h-9 rounded-xl border border-[#1A1F2E] flex items-center justify-center text-[#475569] hover:text-[#CBD5E1] hover:border-[#F97316]/25 transition-all duration-200 disabled:opacity-20 disabled:cursor-not-allowed"
               >
                 <ArrowLeft size={15} />
               </button>
@@ -69,7 +69,7 @@ export function Projects() {
                 onClick={() => scroll('right')}
                 disabled={atEnd}
                 aria-label="Próximo"
-                className="w-9 h-9 rounded-xl border border-[#1A1F2E] flex items-center justify-center text-[#475569] hover:text-[#CBD5E1] hover:border-[#00CFFF]/25 transition-all duration-200 disabled:opacity-20 disabled:cursor-not-allowed"
+                className="w-9 h-9 rounded-xl border border-[#1A1F2E] flex items-center justify-center text-[#475569] hover:text-[#CBD5E1] hover:border-[#F97316]/25 transition-all duration-200 disabled:opacity-20 disabled:cursor-not-allowed"
               >
                 <ArrowRight size={15} />
               </button>
@@ -91,8 +91,8 @@ export function Projects() {
                 reveal reveal-delay-${Math.min(i + 1, 4)}
                 flex-shrink-0 snap-start cursor-pointer
                 w-[82vw] sm:w-[360px] lg:w-[400px]
-                rounded-2xl border border-[#1A1F2E] bg-[#0C0F18]
-                hover:border-[#00CFFF]/20 hover:-translate-y-1
+                rounded-2xl border border-[#1E2535] bg-[#141925]
+                hover:border-[#F97316]/20 hover:-translate-y-1
                 transition-all duration-300 overflow-hidden group
                 ${project.screenshotType === 'mobile' ? 'flex flex-row' : 'flex flex-col'}
               `}
@@ -125,7 +125,7 @@ export function Projects() {
                   </div>
 
                   {/* Screenshot mobile na lateral direita */}
-                  <div className="w-[38%] flex-shrink-0 bg-[#080B13] flex items-center justify-center overflow-hidden p-3">
+                  <div className="w-[38%] flex-shrink-0 bg-[#0D1117] flex items-center justify-center overflow-hidden p-3">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -136,7 +136,7 @@ export function Projects() {
               ) : (
                 <>
                   {/* Layout desktop: imagem no topo */}
-                  <div className="h-48 bg-[#080B13] flex items-center justify-center overflow-hidden px-4 py-3 rounded-t-2xl flex-shrink-0">
+                  <div className="h-48 bg-[#0D1117] flex items-center justify-center overflow-hidden px-4 py-3 rounded-t-2xl flex-shrink-0">
                     {project.image ? (
                       <img
                         src={project.image}

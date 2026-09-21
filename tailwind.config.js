@@ -10,15 +10,15 @@ export default {
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
       colors: {
-        bg: '#07090E',
-        surface: '#0C0F18',
-        rim: '#1A1F2E',
+        bg: '#0D1117',
+        surface: '#141925',
+        rim: '#1E2535',
         accent: {
-          DEFAULT: '#00CFFF',
-          light: '#5DDEFF',
-          dark: '#00A3CC',
-          dim: 'rgba(0, 207, 255, 0.10)',
-          glow: 'rgba(0, 207, 255, 0.30)',
+          DEFAULT: '#F97316',
+          light: '#FB923C',
+          dark: '#EA580C',
+          dim: 'rgba(249, 115, 22, 0.10)',
+          glow: 'rgba(249, 115, 22, 0.30)',
         },
       },
       animation: {

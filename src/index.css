@@ -6,15 +6,15 @@
 
 /* ─── Variáveis ─────────────────────────────────────────── */
 :root {
-  --bg:         #07090E;
-  --surface:    #0C0F18;
-  --rim:        #1A1F2E;
-  --accent:     #00CFFF;
-  --accent-dim: rgba(0, 207, 255, 0.10);
-  --accent-glow:rgba(0, 207, 255, 0.28);
-  --text:       #E2E8F0;   /* slate-200 — texto principal legível */
-  --muted:      #94A3B8;   /* slate-400 — texto secundário legível no dark */
-  --subtle:     #64748B;   /* slate-500 — para informações terciárias */
+  --bg:         #0D1117;
+  --surface:    #141925;
+  --rim:        #1E2535;
+  --accent:     #F97316;
+  --accent-dim: rgba(249, 115, 22, 0.10);
+  --accent-glow:rgba(249, 115, 22, 0.28);
+  --text:       #E2E8F0;
+  --muted:      #94A3B8;
+  --subtle:     #64748B;
 }
 
 /* ─── Base ───────────────────────────────────────────────── */
@@ -35,8 +35,8 @@
   }
 
   ::selection {
-    background-color: rgba(0, 207, 255, 0.18);
-    color: #5DDEFF;
+    background-color: rgba(249, 115, 22, 0.18);
+    color: #FB923C;
   }
 
   * {
@@ -83,63 +83,63 @@ body::after {
   .label {
     @apply inline-flex items-center gap-1.5 text-[10px] font-mono font-medium
            tracking-[0.14em] uppercase px-3 py-1.5 rounded-full border
-           text-[#00CFFF] border-[#00CFFF]/20 bg-[#00CFFF]/[0.05];
+           text-[#F97316] border-[#F97316]/20 bg-[#F97316]/[0.05];
   }
 
   /* Cards */
   .card {
-    @apply bg-[#0C0F18] border border-[#1A1F2E] rounded-2xl transition-all duration-300;
+    @apply bg-[#141925] border border-[#1E2535] rounded-2xl transition-all duration-300;
   }
   .card-hover {
-    @apply hover:border-[#00CFFF]/20 hover:shadow-[0_0_40px_rgba(0,207,255,0.04)];
+    @apply hover:border-[#F97316]/20 hover:shadow-[0_0_40px_rgba(249,115,22,0.04)];
   }
 
   /* Botões */
   .btn-primary {
     @apply inline-flex items-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5
-           bg-[#00CFFF] text-[#07090E] font-semibold rounded-xl
+           bg-[#F97316] text-white font-semibold rounded-xl
            hover:-translate-y-px transition-all duration-200
-           hover:shadow-[0_6px_28px_rgba(0,207,255,0.40)] active:translate-y-0
+           hover:shadow-[0_6px_28px_rgba(249,115,22,0.40)] active:translate-y-0
            text-sm sm:text-base;
   }
   .btn-ghost {
     @apply inline-flex items-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5
            border border-[#2D3748] text-[#94A3B8] font-medium rounded-xl
-           hover:border-[#00CFFF]/30 hover:text-[#E2E8F0] transition-all duration-200
+           hover:border-[#F97316]/30 hover:text-[#E2E8F0] transition-all duration-200
            text-sm sm:text-base;
   }
 
   /* Input */
   .input {
-    @apply w-full px-4 py-3 rounded-xl border border-[#1A1F2E]
-           bg-[#0C0F18] text-[#E0E6F0] placeholder-[#334155]
-           focus:outline-none focus:ring-1 focus:ring-[#00CFFF]/30 focus:border-[#00CFFF]/35
+    @apply w-full px-4 py-3 rounded-xl border border-[#1E2535]
+           bg-[#141925] text-[#E0E6F0] placeholder-[#3D4A5C]
+           focus:outline-none focus:ring-1 focus:ring-[#F97316]/30 focus:border-[#F97316]/35
            transition-all duration-200 text-sm;
   }
 
   /* Tech pills */
   .tech-pill {
     @apply inline-flex items-center font-mono text-[11px] px-2.5 py-1 rounded-md
-           border border-[#1A1F2E] bg-[#0C0F18] text-[#94A3B8]
+           border border-[#1E2535] bg-[#141925] text-[#94A3B8]
            transition-all duration-200 cursor-default
-           hover:border-[#00CFFF]/25 hover:text-[#00CFFF] hover:bg-[#00CFFF]/[0.04];
+           hover:border-[#F97316]/25 hover:text-[#F97316] hover:bg-[#F97316]/[0.04];
   }
   .tech-pill-primary {
-    @apply tech-pill border-[#00CFFF]/25 text-[#00CFFF] bg-[#00CFFF]/[0.06]
-           hover:bg-[#00CFFF]/[0.12];
+    @apply tech-pill border-[#F97316]/25 text-[#F97316] bg-[#F97316]/[0.06]
+           hover:bg-[#F97316]/[0.12];
   }
 
   /* Separador de seção */
   .divider {
-    @apply w-full h-px bg-gradient-to-r from-transparent via-[#1A1F2E] to-transparent;
+    @apply w-full h-px bg-gradient-to-r from-transparent via-[#1E2535] to-transparent;
   }
 }
 
 /* ─── Scrollbar (vertical) ───────────────────────────────── */
 ::-webkit-scrollbar        { width: 3px; }
 ::-webkit-scrollbar-track  { background: transparent; }
-::-webkit-scrollbar-thumb  { background: #1A1F2E; border-radius: 99px; }
-::-webkit-scrollbar-thumb:hover { background: #00CFFF; }
+::-webkit-scrollbar-thumb  { background: #1E2535; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #F97316; }
 
 /* ─── Ocultar scrollbar horizontal (carousel) ────────────── */
 .no-scrollbar                        { -ms-overflow-style: none; scrollbar-width: none; }

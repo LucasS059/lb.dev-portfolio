@@ -54,7 +54,7 @@ export function Contact() {
 
   return (
     <section id="contato" className="section" aria-labelledby="contact-heading">
-      <p className="text-[11px] font-mono text-[#00CFFF]/60 tracking-[0.2em] uppercase mb-10 md:mb-14">
+      <p className="text-[11px] font-mono text-[#F97316]/60 tracking-[0.2em] uppercase mb-10 md:mb-14">
         — Contato
       </p>
 
@@ -64,7 +64,7 @@ export function Contact() {
         style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}
       >
         Tem um projeto?{' '}
-        <span className="bg-gradient-to-r from-[#00CFFF] to-[#5DDEFF] bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[#F97316] to-[#FB923C] bg-clip-text text-transparent">
           Bora conversar.
         </span>
       </h2>

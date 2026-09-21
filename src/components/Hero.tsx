@@ -14,7 +14,7 @@ export function Hero() {
         <div className="w-full flex gap-0 lg:gap-14 xl:gap-20">
 
           {/* Sidebar esquerda — só desktop */}
-          <aside className="hidden lg:flex flex-col justify-between w-28 xl:w-32 flex-shrink-0 border-r border-[#1A1F2E] pr-8 py-2">
+          <aside className="hidden lg:flex flex-col justify-between w-28 xl:w-32 flex-shrink-0 border-r border-[#1E2535] pr-8 py-2">
             <div className="space-y-1">
               <p className="text-[9px] font-mono text-[#334155] tracking-[0.18em] uppercase">Role</p>
               <p className="text-[11px] font-mono text-[#475569] leading-relaxed">

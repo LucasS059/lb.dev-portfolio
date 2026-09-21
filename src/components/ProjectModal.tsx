@@ -86,7 +86,7 @@ function Lightbox({ images, index, onClose }: { images: string[]; index: number;
                 onClick={() => setCurrent(i)}
                 aria-label={`Ir para screenshot ${i + 1}`}
                 className={`rounded overflow-hidden border-2 transition-all duration-200 flex-shrink-0 ${
-                  i === current ? 'border-[#00CFFF] opacity-100' : 'border-transparent opacity-40 hover:opacity-70'
+                  i === current ? 'border-[#F97316] opacity-100' : 'border-transparent opacity-40 hover:opacity-70'
                 }`}
                 style={{ width: '48px', height: '36px' }}
               >
@@ -162,7 +162,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" onClick={onClose} aria-hidden="true" />
 
         <article
-          className="relative w-full max-w-2xl bg-[#0C0F18] border border-[#1A1F2E] rounded-2xl shadow-2xl shadow-black/60 overflow-hidden"
+          className="relative w-full max-w-2xl bg-[#141925] border border-[#1E2535] rounded-2xl shadow-2xl shadow-black/60 overflow-hidden"
           style={{ maxHeight: '90vh' }}
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
@@ -198,7 +198,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                   <div className="grid grid-cols-1 gap-2.5 mb-6">
                     {project.highlights.map(h => (
                       <div key={h} className="flex items-center gap-2.5 text-sm text-[#CBD5E1]">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#00CFFF] flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0" />
                         {h}
                       </div>
                     ))}
@@ -230,7 +230,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               </div>
 
               {/* Coluna da foto — fixa, altura total */}
-              <div className="w-[150px] flex-shrink-0 bg-[#080B13] border-l border-[#1A1F2E] flex flex-col items-center justify-between py-6 px-3">
+              <div className="w-[150px] flex-shrink-0 bg-[#0D1117] border-l border-[#1E2535] flex flex-col items-center justify-between py-6 px-3">
                 <div className="flex-1 flex items-center justify-center w-full">
                   <ClickableImg
                     src={images[current]}
@@ -243,12 +243,12 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 {hasMultiple && (
                   <div className="flex items-center gap-2 mt-4 flex-shrink-0">
                     <button onClick={prev} aria-label="Anterior"
-                      className="w-6 h-6 flex items-center justify-center rounded border border-[#1A1F2E] text-[#475569] hover:text-white transition-all">
+                      className="w-6 h-6 flex items-center justify-center rounded border border-[#1E2535] text-[#475569] hover:text-white transition-all">
                       <ChevronLeft size={12} />
                     </button>
                     <span className="text-[10px] font-mono text-[#475569]">{current + 1}/{images.length}</span>
                     <button onClick={next} aria-label="Próxima"
-                      className="w-6 h-6 flex items-center justify-center rounded border border-[#1A1F2E] text-[#475569] hover:text-white transition-all">
+                      className="w-6 h-6 flex items-center justify-center rounded border border-[#1E2535] text-[#475569] hover:text-white transition-all">
                       <ChevronRight size={12} />
                     </button>
                   </div>
@@ -261,7 +261,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             <div className="overflow-y-auto" style={{ maxHeight: '90vh' }}>
               {images.length > 0 && (
                 <div className="pt-10">
-                <div className="relative bg-[#080B13] overflow-hidden">
+                <div className="relative bg-[#0D1117] overflow-hidden">
                   {/* Imagem — se adapta à proporção original */}
                   <div className="w-full flex items-center justify-center px-5 pb-8" style={{ minHeight: '160px', maxHeight: '280px' }}>
                     <ClickableImg
@@ -289,7 +289,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                         {images.map((_, i) => (
                           <button key={i} onClick={() => { setCurrent(i); setPaused(true) }}
                             aria-label={`Screenshot ${i + 1}`}
-                            className={`rounded-full transition-all duration-300 ${i === current ? 'w-4 h-1.5 bg-[#00CFFF]' : 'w-1.5 h-1.5 bg-white/25 hover:bg-white/50'}`}
+                            className={`rounded-full transition-all duration-300 ${i === current ? 'w-4 h-1.5 bg-[#F97316]' : 'w-1.5 h-1.5 bg-white/25 hover:bg-white/50'}`}
                           />
                         ))}
                       </div>
@@ -317,7 +317,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6">
                     {project.highlights.map(h => (
                       <div key={h} className="flex items-center gap-2.5 text-sm text-[#CBD5E1]">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#00CFFF] flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0" />
                         {h}
                       </div>
                     ))}

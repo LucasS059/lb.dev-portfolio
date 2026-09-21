@@ -1,19 +1,15 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
-interface NavbarProps {
-  theme?: 'light' | 'dark'
-  onToggleTheme?: () => void
-}
-
 const links = [
-  { href: '#sobre',    label: 'Sobre' },
-  { href: '#projetos', label: 'Projetos' },
-  { href: '#stack',    label: 'Stack' },
-  { href: '#contato',  label: 'Contato' },
+  { href: '#sobre',        label: 'Sobre' },
+  { href: '#projetos',     label: 'Projetos' },
+  { href: '#stack',        label: 'Stack' },
+  { href: '#certificados', label: 'Certificados' },
+  { href: '#contato',      label: 'Contato' },
 ]
 
-export function Navbar(_props: NavbarProps) {
+export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -27,8 +23,8 @@ export function Navbar(_props: NavbarProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#07090E]/95 backdrop-blur-xl border-b border-[#1A1F2E] shadow-lg shadow-black/20'
-          : 'bg-[#07090E]/80 backdrop-blur-md border-b border-[#1A1F2E]/40'
+          ? 'bg-[#0D1117]/95 backdrop-blur-xl border-b border-[#1E2535] shadow-lg shadow-black/20'
+          : 'bg-[#0D1117]/80 backdrop-blur-md border-b border-[#1E2535]/40'
       }`}
       role="banner"
     >
@@ -39,9 +35,9 @@ export function Navbar(_props: NavbarProps) {
         {/* Logo */}
         <a
           href="#inicio"
-          className="font-display font-semibold text-white hover:text-[#00CFFF] transition-colors duration-200 text-base"
+          className="font-display font-semibold text-white hover:text-[#F97316] transition-colors duration-200 text-base"
         >
-          lb<span className="text-[#00CFFF]">.</span>dev
+          lb<span className="text-[#F97316]">.</span>dev
         </a>
 
         {/* Links desktop */}
@@ -53,7 +49,7 @@ export function Navbar(_props: NavbarProps) {
                 className="text-sm font-medium text-[#64748B] hover:text-[#E2E8F0] transition-colors duration-200 relative group"
               >
                 {l.label}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#00CFFF] group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-[#F97316] group-hover:w-full transition-all duration-300" />
               </a>
             </li>
           ))}
@@ -62,7 +58,7 @@ export function Navbar(_props: NavbarProps) {
         {/* Mobile toggle */}
         <button
           onClick={() => setMenuOpen(o => !o)}
-          className="md:hidden p-2 rounded-lg text-[#64748B] hover:text-[#E2E8F0] hover:bg-[#0C0F18] transition-all"
+          className="md:hidden p-2 rounded-lg text-[#64748B] hover:text-[#E2E8F0] hover:bg-[#141925] transition-all"
           aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
           aria-expanded={menuOpen}
         >
@@ -73,7 +69,7 @@ export function Navbar(_props: NavbarProps) {
       {/* Mobile drawer */}
       {menuOpen && (
         <div
-          className="md:hidden bg-[#07090E]/98 backdrop-blur-xl border-t border-[#1A1F2E] px-5 py-5 flex flex-col gap-1"
+          className="md:hidden bg-[#0D1117]/98 backdrop-blur-xl border-t border-[#1E2535] px-5 py-5 flex flex-col gap-1"
           role="dialog"
           aria-label="Menu de navegação"
         >
@@ -82,7 +78,7 @@ export function Navbar(_props: NavbarProps) {
               key={l.href}
               href={l.href}
               onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium text-[#64748B] hover:text-[#E2E8F0] transition-colors py-3 border-b border-[#1A1F2E] last:border-0"
+              className="text-sm font-medium text-[#64748B] hover:text-[#E2E8F0] transition-colors py-3 border-b border-[#1E2535] last:border-0"
             >
               {l.label}
             </a>

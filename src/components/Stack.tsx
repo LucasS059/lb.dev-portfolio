@@ -33,7 +33,7 @@ export function Stack() {
   return (
     <section id="stack" aria-labelledby="stack-heading" className="section">
 
-      <p className="text-[11px] font-mono text-[#00CFFF]/60 tracking-[0.2em] uppercase mb-10 md:mb-14">
+      <p className="text-[11px] font-mono text-[#F97316]/60 tracking-[0.2em] uppercase mb-10 md:mb-14">
         — Stack
       </p>
 
@@ -55,7 +55,7 @@ export function Stack() {
               aria-pressed={active === cat}
               className={`text-xs font-mono transition-colors duration-200 pb-0.5 ${
                 active === cat
-                  ? 'text-[#00CFFF] border-b border-[#00CFFF]/50'
+                  ? 'text-[#F97316] border-b border-[#F97316]/50'
                   : 'text-[#64748B] hover:text-[#94A3B8] border-b border-transparent'
               }`}
             >
@@ -72,7 +72,7 @@ export function Stack() {
           return (
             <article
               key={`${cat}-${active}`}
-              className="p-5 rounded-2xl border border-[#1A1F2E] bg-[#0C0F18] hover:border-[#00CFFF]/15 transition-colors duration-300"
+              className="p-5 rounded-2xl border border-[#1A1F2E] bg-[#0C0F18] hover:border-[#F97316]/15 transition-colors duration-300"
               style={{
                 animation: `fadeUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) ${i * 55}ms both`,
               }}
