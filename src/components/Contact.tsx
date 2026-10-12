@@ -73,8 +73,8 @@ export function Contact() {
         {/* Info */}
         <div className="reveal reveal-delay-1">
           <p className="text-[#94A3B8] text-base leading-relaxed mb-8 max-w-sm">
-            Seja um site, um app ou um sistema interno — me manda uma mensagem
-            explicando o que você precisa. Respondo em até 24h.
+            Tem uma vaga, um site, um app ou um sistema para tirar do papel?
+            Me conte o contexto e eu retorno em até 24h.
           </p>
 
           <div className="space-y-4">

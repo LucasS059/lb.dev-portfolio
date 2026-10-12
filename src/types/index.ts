@@ -12,7 +12,7 @@ export interface Project {
     live?: string
   }
   highlights: string[]
-  status: 'production' | 'academic' | 'freelance'
+  status: 'production' | 'staging' | 'academic' | 'freelance'
 }
 
 export interface StackItem {

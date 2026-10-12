@@ -6,14 +6,14 @@ const timeline = [
     period: '2023 — 2027',
     title: 'Ciência da Computação',
     org: 'Instituto Mauá de Tecnologia',
-    note: 'Onde aprendi que arquitetura ruim cobra caro lá na frente.',
+    note: 'Base sólida em algoritmos, arquitetura e engenharia de software, aplicada em projetos integradores com equipes reais.',
   },
   {
     icon: Briefcase,
     period: 'Set 2025 — presente',
-    title: 'Desenvolvedor',
+    title: 'Desenvolvedor Fullstack',
     org: 'Wassamara',
-    note: 'Do diagnóstico à entrega em produção, múltiplas stacks, contato direto com a liderança.',
+    note: 'Sustentação e evolução de sistemas corporativos e SaaS ativos. Atuação em APIs (.NET, Node), sustentação em PHP, modelagem de dados e pipelines CI/CD com Docker.',
   },
 ]
 

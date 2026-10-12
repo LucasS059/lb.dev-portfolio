@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR" class="dark">
   <head>
     <meta charset="UTF-8" />
@@ -7,24 +7,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#F97316" />
+    <meta name="theme-color" content="#0D1117" />
 
     <!-- Primary SEO -->
-    <title>Lucas Silva Barboza — Desenvolvedor Fullstack de Sites, Apps e Sistemas</title>
-    <meta name="description" content="Lucas Silva Barboza, Desenvolvedor Fullstack. Crio sites, aplicativos mobile e sistemas web do zero ao deploy. React, Node.js, TypeScript, PostgreSQL. Estudante no Instituto Mauá de Tecnologia." />
-    <meta name="keywords" content="Lucas Silva Barboza, Lucas Barboza, desenvolvedor fullstack, criação de sites, desenvolvimento de aplicativos, sistemas web, React, Node.js, TypeScript, PostgreSQL, Docker, freelance desenvolvedor, Instituto Mauá de Tecnologia" />
+    <title>Lucas Silva Barboza — Desenvolvedor Fullstack | Sites, Apps e Sistemas</title>
+    <meta name="description" content="Lucas Silva Barboza, Desenvolvedor Fullstack. Crio sites, aplicativos mobile e sistemas web do zero ao deploy com React, Node.js, TypeScript e PostgreSQL. Criador do WassaQuiz e do Trimo OS." />
+    <meta name="keywords" content="Lucas Silva Barboza, Lucas Barboza, Lucas Barboza desenvolvedor, desenvolvedor fullstack, desenvolvedor fullstack São Paulo, criação de sites, desenvolvimento de aplicativos, sistemas web, React, Node.js, TypeScript, PostgreSQL, Docker, Instituto Mauá de Tecnologia" />
     <meta name="author" content="Lucas Silva Barboza" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="googlebot" content="index, follow" />
+    <meta name="language" content="pt-BR" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Lucas Silva Barboza — Sites, Apps e Sistemas" />
-    <meta property="og:description" content="Desenvolvedor Fullstack freelance. Crio sites, apps mobile e sistemas web com React, Node.js e TypeScript — do zero ao deploy." />
-    <meta property="og:url" content="https://lucasbarboza.dev.br" />
-    <meta property="og:image" content="https://lucasbarboza.dev.br/og-image.jpg" />
+    <meta property="og:site_name" content="Lucas Silva Barboza" />
+    <meta property="og:title" content="Lucas Silva Barboza — Desenvolvedor Fullstack" />
+    <meta property="og:description" content="Crio sites, apps mobile e sistemas web com React, Node.js e TypeScript — do zero ao deploy. Veja meus projetos." />
+    <meta property="og:url" content="https://www.lucasbarboza.dev.br/" />
+    <meta property="og:image" content="https://www.lucasbarboza.dev.br/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Lucas Silva Barboza — Desenvolvedor Fullstack" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="profile:first_name" content="Lucas" />
     <meta property="profile:last_name" content="Silva Barboza" />
@@ -32,74 +35,110 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Lucas Silva Barboza — Desenvolvedor Fullstack" />
-    <meta name="twitter:description" content="Crio sites, apps mobile e sistemas web. React, Node.js, TypeScript." />
-    <meta name="twitter:image" content="https://lucasbarboza.dev.br/og-image.jpg" />
+    <meta name="twitter:description" content="Sites, apps mobile e sistemas web. React, Node.js, TypeScript." />
+    <meta name="twitter:image" content="https://www.lucasbarboza.dev.br/og-image.jpg" />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lucasbarboza.dev.br" />
+    <link rel="canonical" href="https://www.lucasbarboza.dev.br/" />
 
-    <!-- JSON-LD: ProfilePage + Person -->
+    <!-- JSON-LD: ProfilePage + Person + WebSite -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfilePage",
-      "dateCreated": "2025-09-01",
-      "dateModified": "2026-09-20",
-      "mainEntity": {
-        "@type": "Person",
-        "name": "Lucas Silva Barboza",
-        "alternateName": ["Lucas Barboza", "Lucas Barboza Dev"],
-        "url": "https://lucasbarboza.dev.br",
-        "email": "lucasbarboza299@gmail.com",
-        "image": "https://lucasbarboza.dev.br/og-image.jpg",
-        "sameAs": [
-          "https://www.linkedin.com/in/lucas-barboza-dev-br",
-          "https://github.com/LucasS059"
-        ],
-        "jobTitle": "Desenvolvedor Fullstack Freelance",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Wassamara",
-          "url": "https://wassamara.com.br"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.lucasbarboza.dev.br/#website",
+          "url": "https://www.lucasbarboza.dev.br/",
+          "name": "Lucas Silva Barboza",
+          "inLanguage": "pt-BR",
+          "publisher": { "@id": "https://www.lucasbarboza.dev.br/#person" }
         },
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "Instituto Mauá de Tecnologia",
-          "sameAs": "https://maua.br",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "São Caetano do Sul",
-            "addressRegion": "SP",
-            "addressCountry": "BR"
-          }
+        {
+          "@type": "ProfilePage",
+          "@id": "https://www.lucasbarboza.dev.br/#profile",
+          "url": "https://www.lucasbarboza.dev.br/",
+          "name": "Lucas Silva Barboza — Desenvolvedor Fullstack",
+          "isPartOf": { "@id": "https://www.lucasbarboza.dev.br/#website" },
+          "dateCreated": "2025-09-01",
+          "dateModified": "2026-10-11",
+          "mainEntity": { "@id": "https://www.lucasbarboza.dev.br/#person" }
         },
-        "knowsAbout": [
-          "Criação de sites",
-          "Desenvolvimento de aplicativos mobile",
-          "Sistemas web",
-          "React",
-          "React Native",
-          "Node.js",
-          "TypeScript",
-          "JavaScript",
-          "PostgreSQL",
-          "MySQL",
-          "Docker",
-          "REST API",
-          "Arquitetura de software",
-          "Desenvolvimento fullstack"
-        ],
-        "description": "Desenvolvedor Fullstack freelance especializado em criação de sites, aplicativos mobile e sistemas web. Estudante de Ciência da Computação no Instituto Mauá de Tecnologia (2023–2027), estagiando na Wassamara.",
-        "nationality": {
-          "@type": "Country",
-          "name": "Brazil"
+        {
+          "@type": "Person",
+          "@id": "https://www.lucasbarboza.dev.br/#person",
+          "name": "Lucas Silva Barboza",
+          "alternateName": ["Lucas Barboza", "Lucas Barboza Dev"],
+          "url": "https://www.lucasbarboza.dev.br/",
+          "email": "mailto:dev.lucas.silva59@gmail.com",
+          "image": "https://www.lucasbarboza.dev.br/og-image.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/lucas-barboza-dev-br",
+            "https://github.com/LucasS059",
+            "https://trimo.app.br"
+          ],
+          "jobTitle": "Desenvolvedor Fullstack",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Wassamara",
+            "url": "https://wassamara.com.br"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Instituto Mauá de Tecnologia",
+            "sameAs": "https://maua.br",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "São Caetano do Sul",
+              "addressRegion": "SP",
+              "addressCountry": "BR"
+            }
+          },
+          "knowsAbout": [
+            "Criação de sites",
+            "Desenvolvimento de aplicativos mobile",
+            "Sistemas web",
+            "React",
+            "React Native",
+            "Flutter",
+            "Node.js",
+            "TypeScript",
+            "JavaScript",
+            "PostgreSQL",
+            "MySQL",
+            "Docker",
+            "REST API",
+            "Desenvolvimento fullstack"
+          ],
+          "description": "Desenvolvedor Fullstack especializado em criação de sites, aplicativos mobile e sistemas web. Estudante de Ciência da Computação no Instituto Mauá de Tecnologia (2023–2027), desenvolvedor na Wassamara e criador do Trimo OS.",
+          "nationality": { "@type": "Country", "name": "Brazil" }
         }
-      }
+      ]
     }
     </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main style="font-family:sans-serif;max-width:640px;margin:48px auto;padding:0 20px;color:#e2e8f0;background:#0D1117">
+        <h1>Lucas Silva Barboza — Desenvolvedor Fullstack</h1>
+        <p>Crio sites, aplicativos mobile e sistemas web do zero ao deploy, com React, Node.js, TypeScript e PostgreSQL. Estudante de Ciência da Computação no Instituto Mauá de Tecnologia e desenvolvedor na Wassamara.</p>
+        <h2>Projetos</h2>
+        <ul>
+          <li><strong>WassaQuiz</strong> — plataforma SaaS white-label de gamificação com IA.</li>
+          <li><strong>Trimo OS</strong> — gestão e agendamento para estéticas automotivas (<a href="https://trimo.app.br">trimo.app.br</a>).</li>
+          <li><strong>FitMind</strong> — app mobile de atividade física com IA.</li>
+          <li><strong>Metrô SP — Extintores</strong> — app de inspeção de extintores via QR Code.</li>
+          <li><strong>FSALES Advogados</strong> — site institucional.</li>
+        </ul>
+        <h2>Contato</h2>
+        <p>
+          <a href="mailto:dev.lucas.silva59@gmail.com">dev.lucas.silva59@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/lucas-barboza-dev-br">LinkedIn</a> ·
+          <a href="https://github.com/LucasS059">GitHub</a>
+        </p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

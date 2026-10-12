@@ -73,7 +73,10 @@ export function Hero() {
                   <span className="text-white font-medium">Eu coloco no ar.</span>
                 </p>
                 <p className="text-sm text-[#64748B]">
-                  Sites, aplicativos e sistemas — do zero ao deploy em produção.
+                  Sites, aplicativos e sistemas web — do banco de dados ao deploy.
+                </p>
+                <p className="text-[11px] font-mono text-[#F97316]/70 tracking-[0.12em] uppercase pt-2">
+                  Desenvolvedor Fullstack · Ciência da Computação no Instituto Mauá
                 </p>
               </div>
 

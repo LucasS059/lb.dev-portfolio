@@ -9,6 +9,7 @@ interface ProjectModalProps {
 
 const statusMeta: Record<Project['status'], { label: string; color: string }> = {
   production: { label: 'Em produção', color: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' },
+  staging:    { label: 'Em homologação', color: 'bg-amber-500/10 text-amber-400 border-amber-500/20' },
   academic:   { label: 'Acadêmico',   color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
   freelance:  { label: 'Freelance',   color: 'bg-violet-500/10 text-violet-400 border-violet-500/20' },
 }

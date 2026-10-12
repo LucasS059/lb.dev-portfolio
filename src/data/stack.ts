@@ -11,6 +11,7 @@ export const stack: StackItem[] = [
 
   // Frontend
   { name: 'React', category: 'frontend', level: 'primary' },
+  { name: 'Next.js', category: 'frontend', level: 'primary' },
   { name: 'HTML & CSS', category: 'frontend', level: 'primary' },
 
   // Mobile
@@ -26,7 +27,7 @@ export const stack: StackItem[] = [
   // Infra
   { name: 'Docker', category: 'infra', level: 'primary' },
   { name: 'Git', category: 'infra', level: 'primary' },
-  { name: 'GitHub Actions', category: 'infra', level: 'secondary' },
+  { name: 'GitHub Actions', category: 'infra', level: 'primary' },
   { name: 'Linux', category: 'infra', level: 'secondary' },
 ]
 

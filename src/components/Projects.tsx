@@ -6,12 +6,14 @@ import type { Project } from '../types'
 
 const statusLabel: Record<Project['status'], string> = {
   production: 'Em produção',
+  staging:    'Em homologação',
   academic:   'Acadêmico',
   freelance:  'Freelance',
 }
 
 const statusColor: Record<Project['status'], string> = {
   production: 'text-emerald-500',
+  staging:    'text-amber-400',
   academic:   'text-sky-500',
   freelance:  'text-violet-400',
 }

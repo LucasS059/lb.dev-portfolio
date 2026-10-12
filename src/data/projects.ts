@@ -1,15 +1,17 @@
 import type { Project } from '../types'
 
-import imgWassaquizDash    from '../assets/fotos_projetos/admin-dash.png'
-import imgWassaquizJogador from '../assets/fotos_projetos/dash-jogador.png'
-import imgWassaquizAnti    from '../assets/fotos_projetos/anti.png'
-import imgWassaquizApi     from '../assets/fotos_projetos/api-docs.png'
+import imgWassaquizAdmin   from '../assets/fotos_projetos/wassaquiz-admin.png'
+import imgWassaquizJogador from '../assets/fotos_projetos/wassaquiz-jogador.png'
+import imgWassaquizQuizzes from '../assets/fotos_projetos/wassaquiz-quizzes.png'
 
 import imgFitmindHome    from '../assets/fotos_projetos/Home_fitmind.png'
 import imgFitmindExplore from '../assets/fotos_projetos/Explorar_fitmind.png'
 import imgFitmindTreino  from '../assets/fotos_projetos/gravar_treino_fitmind.png'
 
 import imgFsales from '../assets/fotos_projetos/Landingpage-fsales.png'
+import imgTrimoHome       from '../assets/fotos_projetos/trimo-home.png'
+import imgTrimoAgenda     from '../assets/fotos_projetos/trimo-agenda.png'
+import imgTrimoFinanceiro from '../assets/fotos_projetos/trimo-financeiro.png'
 
 export const projects: Project[] = [
   {
@@ -26,15 +28,41 @@ Diferenciais técnicos:
 → App mobile em Expo/React Native, painel admin completo e deploy automatizado no Render
 → 107 endpoints documentados no API Playground interno`,
     tags: ['Node.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'React', 'React Native', 'Docker', 'OpenAI'],
-    image: imgWassaquizDash,
-    images: [imgWassaquizDash, imgWassaquizJogador, imgWassaquizAnti, imgWassaquizApi],
+    image: imgWassaquizAdmin,
+    images: [imgWassaquizAdmin, imgWassaquizJogador, imgWassaquizQuizzes],
     screenshotType: 'desktop',
     links: {},
     highlights: [
-      'SaaS em produção',
+      'SaaS em homologação',
       'Anti-cheat multicamadas',
       'IA com controle de custo',
       '107 endpoints documentados',
+    ],
+    status: 'staging',
+  },
+  {
+    id: 'trimo-os',
+    title: 'Trimo OS',
+    description: 'SaaS próprio de gestão e agendamento para estéticas automotivas — link de agendamento, painel de ordens, pagamentos e avisos por WhatsApp.',
+    longDescription: `Produto SaaS criado por mim, do zero, para donos de estética automotiva organizarem a operação da loja em um só lugar.
+
+Destaques:
+→ Link de agendamento próprio por loja, com serviços, horários e dados do veículo
+→ Painel operacional em fila: agendado, pátio, em serviço e pronto, com atrasos visíveis
+→ Pagamentos com Pix, Point e baixa manual — entrega só com pagamento confirmado
+→ Avisos automáticos por WhatsApp a cada etapa do atendimento
+→ Multi-loja com dados e permissões isolados por unidade
+→ Landing page com SEO, dados estruturados e teste grátis de 7 dias`,
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'SEO'],
+    image: imgTrimoHome,
+    images: [imgTrimoHome, imgTrimoAgenda, imgTrimoFinanceiro],
+    screenshotType: 'desktop',
+    links: { live: 'https://trimo.app.br' },
+    highlights: [
+      'SaaS próprio no ar',
+      'Multi-loja',
+      'Pagamentos integrados',
+      'Avisos via WhatsApp',
     ],
     status: 'production',
   },
